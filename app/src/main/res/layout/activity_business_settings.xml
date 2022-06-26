@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A27E6F"
+    tools:context=".BusinessSettings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="#EDF7F6"
+                android:padding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Business name"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeBName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textPersonName"
+                        android:textSize="20dp"
+                        android:text="Enter Business Name" />
+
+                    <TextView
+                        android:id="@+id/bType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Business Type"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeBType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textPersonName"
+                        android:textSize="20dp"
+                        android:text="Enter Business Type" />
+
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Phone number"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changebPhoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="phone"
+                        android:textSize="20dp"
+                        android:text="Enter Phone Number" />
+
+                    <TextView
+                        android:id="@+id/address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Address"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textLongMessage"
+                        android:textSize="20dp"
+                        android:text="Enter Address" />
+
+                    <TextView
+                        android:id="@+id/postcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Postal Code"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changePostCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textPostalAddress"
+                        android:textSize="20dp"
+                        android:text="Enter Postcode" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="City"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="text"
+                        android:textSize="20dp"
+                        android:text="Enter City" />
+
+                    <TextView
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Country"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="text"
+                        android:textSize="20dp"
+                        android:text="Enter Country" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Description"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textMultiLine"
+                        android:lines="6"
+                        android:gravity="top"
+                        android:textSize="20dp"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:text="Enter Description" />
+
+                    <Button
+                        android:id="@+id/changePfp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="Upload Profile Picture" />
+
+                    <Button
+                        android:id="@+id/selectPfp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Select Profile Photo" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Save Changes" />
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

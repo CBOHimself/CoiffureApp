@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EDF7F6"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+
+            <ImageView
+                android:id="@+id/bPfpCard"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/bNameCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Business Name"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.120000005" />
+
+            <TextView
+                android:id="@+id/bTypeCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="Type"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/bNameCard"
+                app:layout_constraintVertical_bias="0.07999998" />
+
+            <TextView
+                android:id="@+id/descriptionCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength="200"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="Descriptions: Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/bTypeCard"
+                app:layout_constraintVertical_bias="0.07999998" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/phoneNo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="140dp"-->
+<!--                android:text="Phone Number"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/bPfpCard"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/descriptionCard"-->
+<!--                app:layout_constraintVertical_bias="0.07999998" />-->
+
+            <TextView
+                android:id="@+id/bAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:text="Address"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNo"
+                app:layout_constraintVertical_bias="0.046" />
+            <TextView
+                android:id="@+id/phoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:text="Phone Number"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionCard"
+                app:layout_constraintVertical_bias="0.046" />
+
+            <TextView
+                android:id="@+id/bPostCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Code"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/bAddress"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/bCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/bCity"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/bCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.004"
+                app:layout_constraintStart_toEndOf="@+id/bPfpCard"
+                app:layout_constraintTop_toBottomOf="@+id/bPostCode"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bookBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/descriptionCard"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionCard"
+                app:layout_constraintVertical_bias="0.739"
+                tools:ignore="UnknownIdInLayout" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

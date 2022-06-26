@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A27E6F"
+    android:layout_height="match_parent"
+    tools:context=".BusinessPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:background="#EDF7F6"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/displayPfp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_baseline_person_24" />
+
+                    <TextView
+                        android:id="@+id/displayBName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Display Name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iconBType"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        android:tint="?attr/colorControlNormal"
+                        tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:id="@+id/displayBType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Business Type"
+                    android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/iconEmail"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/iconBType"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="150dp"
+                        android:src="@drawable/ic_baseline_mail_outline_24" />
+
+                    <TextView
+                        android:id="@+id/displayEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:layout_below="@id/displayBType"
+                        android:layout_marginTop="10dp"
+                        android:hint="Email Address"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/iconPhone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/iconEmail"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="150dp"
+                        android:src="@drawable/ic_baseline_phone_24" />
+
+                    <TextView
+                        android:id="@+id/displayPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:layout_below="@id/displayEmail"
+                        android:layout_marginTop="10dp"
+                        android:hint="Phone Number"
+                        android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:background="#EDF7F6"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/descriptionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Description"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/dispDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description" />
+
+                    <Button
+                        android:id="@+id/bookBtn"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="Book" />
+
+                    <Button
+                        android:id="@+id/backBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Back" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

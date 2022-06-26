@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A27E6F"
+    tools:context=".UserProfileSettings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="#EDF7F6"
+                android:padding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="First name"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textPersonName"
+                        android:textSize="20dp"
+                        android:text="Enter First Name" />
+
+                    <TextView
+                        android:id="@+id/lName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Last name"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textPersonName"
+                        android:textSize="20dp"
+                        android:text="Enter Last Name" />
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Email"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changeEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="textEmailAddress"
+                        android:textSize="20dp"
+                        android:text="Enter Email Address" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="Phone number"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/changePhoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:ems="20"
+                        android:inputType="phone"
+                        android:textSize="20dp"
+                        android:text="Enter Phone Number" />
+                    <Button
+                        android:id="@+id/changePfp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Upload Profile Picture" />
+                    <Button
+                        android:id="@+id/selectPfp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Select Profile Picture" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Save Changes" />
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A27E6F"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#A27E6F">
+
+                <ImageView
+                    android:id="@+id/displayPfp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_baseline_person_24" />
+
+
+                <TextView
+                    android:id="@+id/displayUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/displayPfp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Display Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="#EDF7F6"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/iconPerson"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/displayFullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:hint="Full name"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/iconEmail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/iconPerson"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_mail_outline_24" />
+
+                <TextView
+                    android:id="@+id/displayEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/displayFullname"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Email Address"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/iconPhone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/iconEmail"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_phone_24" />
+
+                <TextView
+                    android:id="@+id/displayPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/displayEmail"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Phone Number"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/accountSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/displayPhone"
+                    android:layout_marginTop="5dp"
+                    android:text="Account Settings" />
+
+                <Button
+                    android:id="@+id/logOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/accountSettings"
+                    android:layout_marginTop="5dp"
+                    android:text="Log Out" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
